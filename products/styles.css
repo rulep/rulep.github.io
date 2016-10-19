@@ -273,6 +273,10 @@ Page Header
   float: left;
   margin-left: 30px;
 }
+.header-txt a {
+  color: #fff;
+  text-decoration: none;
+}
 .div-fl {
   float: right;
 }
