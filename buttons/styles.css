@@ -5,10 +5,6 @@ Button Custom Styles
 Button Effects
 */
 
-.section {
-	margin: 12% 0;
-}
-
 /*
   ========================================
   Clearfix
@@ -38,6 +34,7 @@ Button Effects
   width: 100%;
   height: 60px;
   background-color: rgba(0,0,0,0.4);
+  font-family: sans-serif;
 }
 
 
@@ -48,6 +45,8 @@ Button Effects
 */
 
 .header-left {
+  background-color: rgba(0,0,0,0) !important;
+  border-bottom: 0 !important;
   float: left;
 }
 #logo, #logo-text {
@@ -62,6 +61,7 @@ Button Effects
   margin-left: 8px;
 }
 #logo-text {
+  color: #fff;
   display: inline;
   font-size: 22px;
   font-weight: 400;
@@ -97,9 +97,9 @@ Button Effects
   opacity: 0.7;
 }
 .primary-header a {
-  color: #fff;
-  padding: 5px;
-  text-decoration: none;
+  color: #fff !important;
+  padding: 5px !important;
+  text-decoration: none !important;
 }
 .primary-header a:hover {
   color: #FE7DB9;
@@ -175,8 +175,8 @@ div {
 	border-bottom: 4px solid #C29288 !important;
 }
 a {
-	background-color: #DFDAA3 !important;
-	border-bottom: 4px solid #CCC896 !important;
+	xbackground-color: #DFDAA3 !important;
+	xborder-bottom: 4px solid #CCC896 !important;
 }
 .button-sm {
 	width: 125px;
@@ -226,8 +226,8 @@ div:active {
 
 /* anchor with button class */
 a:active {
-	border-bottom: 4px solid #DFDAA3 !important;
-	border-top: 4px solid #CCC896 !important;
+	xborder-bottom: 4px solid #DFDAA3 !important;
+	xborder-top: 4px solid #CCC896 !important;
 }
 
 .button-sm:active {
