@@ -1,0 +1,324 @@
+/*------------------------------------*\
+    RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0b1 | 201101 
+  NOTE:WORK IN PROGRESS
+  USE WITH CAUTION AND TEST WITH ABANDON */
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{
+  display:block;
+}
+body{
+  line-height:1;
+}
+ol,ul{
+  list-style:none;
+}
+blockquote,q{
+  quotes:none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after{
+  content:’’;
+  content:none;
+}
+/* remember to define visible focus styles! 
+:focus{
+    outline:?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins{
+  text-decoration:none;
+}
+del{
+  text-decoration:line-through;
+}
+
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* Table of Contents
+------------------------------------
+Custom Styles
+Calculator Structure
+Display Screen
+Buttons
+Fonts
+
+*/
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Primary Header
+  ========================================
+*/
+
+.primary-header {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0,0,0,0.4);
+}
+
+
+/*
+  ========================================
+  Header: Left Side
+  ========================================
+*/
+
+.header-left {
+  float: left;
+}
+#logo, #logo-text {
+  line-height: 60px;
+  vertical-align: middle;
+}
+#logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 0px;
+  margin-left: 8px;
+}
+#logo-text {
+  color: #fff;
+  display: inline;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+  float: right;
+  position: relative;
+  text-align: right;
+  z-index: 5; 
+}
+.nav li {
+  display: inline-block;
+  float: left;
+  line-height: 60px;
+  margin: 0 10px;  
+  position: relative;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+#logo:hover {
+  opacity: 0.7;
+}
+.primary-header a {
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+}
+.primary-header a:hover {
+  color: #FE7DB9;
+}
+
+/*
+  ========================================
+  Dropdown Menu
+  ========================================
+*/
+
+.nav ul ul {
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+.nav ul ul li {
+  width: 120px;
+  line-height: 45px;
+  margin: 0;
+  text-align: left;
+}
+.nav ul ul li:hover {
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 5px;
+}
+.nav ul ul li a {
+  color: #bbb;
+}
+.nav ul ul li a:hover {
+  color: #FE7DB9;
+}
+.nav li:hover ul {
+  display: block;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body{
+  color: #777;
+  font-family: sans-serif;
+}
+
+/*
+  ========================================
+  Calculator Structure
+  ========================================
+*/
+
+.section {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.calc-con {
+  width: 460px;
+  display: block;
+  margin: 12% auto;
+}
+.clear {
+  clear: both;
+  display: block;
+  float: none;
+}
+
+/*
+  ========================================
+  Display Screen
+  ========================================
+*/
+
+.calc-screen{
+  width: 100%;
+  background-color: #9DB4DE;
+  border-radius: 10px 10px 0px 0px;
+  box-sizing: border-box;
+  padding: 34px 20px;
+  text-align: right;
+}
+.display-screen {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 62px;
+  font-weight: 300;
+  letter-spacing: 10px;
+  text-align: right;
+}
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn {
+  width: 25%;
+  height: 75px;
+  background-color: #BF9CDE;
+  xxbackground-color: rgba(200,200,200,0.5);
+  border: 0;
+  border-bottom: solid 1px #9DB4DE;
+  border-right: solid 1px #9DB4DE;
+  color: #777;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 50px;
+  margin: 0;
+  text-align: center;
+  
+}
+.btn-lrg {
+  width: 50%;
+}
+.brd-left-rads {
+  border-radius: 0px 0px 0px 10px;
+}
+.brd-right-rads {
+  border-radius: 0px 0px 10px 0px;
+}
+.no-border {
+  background-color: #E29ACB;
+  border-left: 0;
+  border-right: 0;
+  color: #fff;
+}
+.btn-input {
+  background-color: #999ADB;
+}
+.btn:hover {
+  opacity: 0.6;
+}
+
+/*
+  ========================================
+  Fonts
+  ========================================
+*/
+
+.fnt-lrg {
+  font-size: 48px;
+  line-height: 31px;
+}
+.fnt-sm {
+  font-size: 36px;
+}

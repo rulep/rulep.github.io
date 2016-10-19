@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Calculator</title>
+		<link rel="stylesheet" href="styles.css">
+		
+	</head>
+
+	<body>
+
+		<!-- Header -->
+
+    <header class="primary-header group">
+
+    	<div class="header-left">
+    		<a href="https://learn.moderndeveloper.com/">
+      		<img src="http://i.imgur.com/fw3JKQo.png" id="logo">
+      	</a>
+				<p id="logo-text">rulep portfolio</p>
+			</div>
+
+      <nav class="nav primary-nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="/buttons/index.html">Buttons</a></li>
+          <li><a href="/profile/index.html">Profile</a></li>
+          <li><a href="#">Forms</a>
+          	<ul>
+          		<li><a href="/forms/signup.html">Signup</a></li>
+          		<li><a href="/forms/search.html">Search</a></li>
+          		<li><a href="/forms/questionnaire.html">Questionnaire</a></li>
+          		<li><a href="/forms/login.html">Login</a></li>
+          		<li><a href="/forms/colorpicker.html">Color Building</a></li>
+          		<li><a href="/forms/shipping.html">Shipping/Billing</a></li>
+          		<li><a href="/forms/schedule.html">Scheduling</a></li>
+          		<li><a href="/forms/credit.html">Credit/Debit</a></li>
+          	</ul>
+          </li>
+          <li><a href="#">Calculator</a></li>
+          <li><a href="/products/index.html">Products</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+		<!-- container -->
+		<div class="section">
+			<div class="calc-con">
+
+				<!-- screen -->
+				<div class="calc-screen">
+					<input type="text" class="display-screen" value="0">
+				</div>
+				<!-- /screen -->
+
+				<!-- buttons-container -->
+				<div class="section buttons-con">
+					<!-- btn-rows -->
+					<div class="section">
+
+						<!-- row 1 (top row): C, DEL, [/] -->
+			
+						<input type="button" class="btn btn-lrg btn-input" value="C">
+						<input type="button" class="btn btn-input" value="DEL">
+						<input type="button" class="btn no-border" value="/">
+						
+
+						<!-- row 2: numbers 7-9, [*] -->
+						
+						<input type="button" class="btn" value="7">
+						<input type="button" class="btn" value="8">
+						<input type="button" class="btn" value="9">
+						<input type="button" class="btn no-border fnt-sm" value="X">
+						
+
+						<!-- row 3: numbers 4-6, [-] -->
+						
+						<input type="button" class="btn" value="4">
+						<input type="button" class="btn" value="5">
+						<input type="button" class="btn" value="6">
+						<input type="button" class="btn no-border fnt-lrg" value="-">
+						
+
+						<!-- row 4: numbers 1-3, [+] -->
+						
+						<input type="button" class="btn" value="1">
+						<input type="button" class="btn" value="2">
+						<input type="button" class="btn" value="3">
+						<input type="button" class="btn no-border fnt-lrg" value="+">
+						
+
+						<!-- row 5 (last row): number 0, [.], [=] -->
+						
+						<input type="button" class="btn btn-lrg btn-input brd-left-rads" value="0">
+						<input type="button" class="btn fnt-lrg btn-input" value=".">
+						<input type="button" class="btn no-border brd-right-rads fnt-lrg" value="=">
+						
+
+						<div class="clear"></div>
+					</div>
+					<!-- /btn-rows -->						
+				</div>
+				<!-- /buttons-container -->
+			</div>
+		</div>
+		<!-- /container -->
+
+	</body>
+</html>
