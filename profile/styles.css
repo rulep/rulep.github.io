@@ -225,7 +225,7 @@ body {
 /* placing cursor over profile card, rotates the avatar */
 .container:hover .avatar {
   -webkit-transform: rotateY(180deg);
-     -moz-transform: rotateY(180deg); /* check if moz REQ */
+     -moz-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 /* placing cursor over profile card, hides front image */
@@ -239,34 +239,34 @@ body {
   visibility: visible;
 }
 .avatar {
-  border-radius: 50%; /* forms circle around images */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; 
   -webkit-box-shadow: 0 0 0 10px #FFCC89;
      -moz-box-shadow: 0 0 0 10px #FFCC89;
           box-shadow: 0 0 0 10px #FFCC89; /* creates shadow around border-radius of images */
-  height: 200px; /* change px to percentage */
-  margin: auto; /* centers images */
-  overflow: hidden; /* hides content that does not fit w/in box */
+  margin: auto; 
+  overflow: hidden; 
   position: relative;
-  top: -75px; /* moves images up 60 pixels, onto .container */
+  top: -75px; 
   -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out; /* test last part "ease", change? */
-        transition: all 0.5s ease-in-out; /* read 2 links, allows :hover rules to occur */
-  width: 200px; /* ?? moves second img to next line, change px to percentage */
+    -moz-transition: all 0.5s ease-in-out; 
+        transition: all 0.5s ease-in-out; 
 }
-.avatar img { /* ?? this rule cause the front img to disappear */
-  border-radius: 50%; /* is this line necessary? */
-  position: absolute; /* keeps image in place */
+.avatar img { 
+  border-radius: 50%; 
+  position: absolute; 
   left: 0;
   top: 0;
   -webkit-transition: all 0.5s ease-in-out;
-     -moz-transition: all 0.5s ease-in-out; /* like extra insurance */
-          transition: all 0.5s ease-in-out; /* not sure if this declaration, if move cursor to img also takes place*/
+     -moz-transition: all 0.5s ease-in-out; 
+          transition: all 0.5s ease-in-out; 
 }
 .avatar img:first-child {
-  z-index: 1; /* places img above :last-child */
+  z-index: 1; 
 }
 .avatar img:last-child {
-  z-index: 0; /* places img underneath :first-child */
+  z-index: 0; 
 }
 
 /*
@@ -276,19 +276,19 @@ body {
 */
 
 h2 {
-  color: #333; /* change, like darker ver of bg, color03 */
+  color: #333; 
   font-family: 'Press Start 2P';
-  font-size: 32px; /* double the size of <p> font */
+  font-size: 32px; 
   margin-top: -20px;
-  margin-bottom: 18px; /* creates space between h2 and h4 */
+  margin-bottom: 18px; 
 }
 h4 {
   color: #01C8D2;
   font-family: 'Press Start 2P';
-  font-size: 14px; /* smaller font-size than p text */
-  letter-spacing: 1px; /* spacing between letters */
+  font-size: 14px; 
+  letter-spacing: 1px; 
   margin-top: 30px;
-  margin-bottom: 25px; /* creates space between h4 and p */
+  margin-bottom: 25px; 
 }
 .lname, .title {
   font-family: 'Press Start 2P';
@@ -296,11 +296,11 @@ h4 {
   letter-spacing: 8px;
 }
 p {
-  color: #777; /* change, color 03 like h2, can be diff */
+  color: #777; 
   font-family: 'Press Start 2P';
   font-size: 14px;
-  line-height: 26px; /* create spacing between lines in p */
-  margin-bottom: 30px; /* ?? create area to add icons later */
+  line-height: 26px; 
+  margin-bottom: 30px; 
   padding: 0 25px;
   text-align: justify;
 }
@@ -401,14 +401,14 @@ width: 5px;
 height: 10px; 
 float: left; 
 display: block; 
-background: #fff; /* #fff */
+background: #fff; 
 }
 .brdr .b { 
 width: 5px; 
 height: 5px; 
 float: left; 
 display: block; 
-background: #fff; /* #fff */
+background: #fff; 
 }
 .brdr .c { 
 width: 10px; 
