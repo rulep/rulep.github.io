@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Questionnaire</title>
+		<link rel="stylesheet" href="questionnaire.css">		
+	</head>
+
+	<body>
+
+    <!-- Header -->
+
+    <header class="primary-header group">
+
+      <div class="header-left">
+        <a href="https://learn.moderndeveloper.com/">
+          <img src="http://i.imgur.com/fw3JKQo.png" id="logo">
+        </a>
+        <p id="logo-text">rulep portfolio</p>
+      </div>
+
+      <nav class="nav primary-nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="/buttons/index.html">Buttons</a></li>
+          <li><a href="/profile/index.html">Profile</a></li>
+          <li><a href="#">Forms</a>
+            <ul>
+              <li><a href="/forms/signup.html">Signup</a></li>
+              <li><a href="/forms/search.html">Search</a></li>
+              <li><a href="#">Questionnaire</a></li>
+              <li><a href="/forms/login.html">Login</a></li>
+              <li><a href="/forms/colorpicker.html">Color Building</a></li>
+              <li><a href="/forms/shipping.html">Shipping/Billing</a></li>
+              <li><a href="/forms/schedule.html">Scheduling</a></li>
+              <li><a href="/forms/credit.html">Credit/Debit</a></li>
+            </ul>
+          </li>
+          <li><a href="/calculator/index.html">Calculator</a></li>
+          <li><a href="/products/index.html">Products</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+
+ <div class="container">
+      <div class="form-container">
+        
+          <div class="form-header">
+              <h4>Questionnaire</h4>
+          </div>
+          <!-- /form header -->
+            
+            <form>
+              <div class="form-body">
+                <div class="form-row">
+                  <div class="section form-col">
+                    <label for="firstname" class="field prepend-icon">
+                      <input type="text" name="firstname" id="firstname" class="gui-input" placeholder="First Name">
+                      <label for="firstname" class="field-icon"></label>  
+                    </label>
+                  </div>
+                  <!-- /section -->
+                        
+                  <div class="section form-col">
+                    <label for="lastname" class="field prepend-icon">
+                      <input type="text" name="lastname" id="lastname" class="gui-input" placeholder="Last Name">
+                      <label for="lastname" class="field-icon"></label>  
+                    </label>
+                  </div>
+                  <!-- /section --> 
+                                                                   
+                </div>
+                <!-- /form row -->
+                    
+                  <div class="section">
+                    <label for="company" class="field prepend-icon">
+                      <input type="text" name="company" id="company" class="gui-input" placeholder="Company">
+                      <label for="company" class="field-icon"></label>  
+                    </label>
+                 </div>
+                 <!-- /section -->                    
+                    
+                  <div class="section">
+                    <label for="email" class="field prepend-icon">
+                      <input type="email" name="email" id="email" class="gui-input" placeholder="Email address">
+                      <label for="email" class="field-icon"></label>  
+                    </label>
+                  </div>
+                  <!-- /section -->                    
+                    
+                  <div class="section">
+                    <label for="mobile" class="field prepend-icon">
+                      <input type="tel" name="mobile" id="mobile" class="gui-input" placeholder="Contact Number">
+                      <label for="mobile" class="field-icon"></label>  
+                    </label>
+                  </div>
+                  <!-- /section --> 
+                    
+                  <div class="section">
+                    <label class="field select">
+                      <select id="dept" name="dept">
+                        <option value="">Select department...</option>
+                        <option value="admin">Administration</option>
+                        <option value="sales">Marketing &amp; Sales</option>
+                        <option value="tech">Technical</option>
+                        <option value="other">Other</option>
+                      </select>               
+                    </label>  
+                    </div><!-- end section -->
+                    
+                  <div class="section">
+                    <label for="comment" class="field prepend-icon">
+                      <textarea class="gui-textarea" id="comment" name="comment" placeholder="Feedback message"></textarea>
+                      <label for="comment" class="field-icon"></label>
+                      
+                    </label>
+                  </div>
+                  <!-- /section -->
+                    
+                    <div class="spacer spacer-b20"></div> 
+                    
+                    <div class="section">
+                      <span class="rating block">
+                      <span>Rate the Products</span>
+                            <input class="rating-input" id="five-stars" type="radio"  name="product-rate">
+                            <label class="rating-star" for="five-stars"></label>
+                            <input class="rating-input" id="four-stars" type="radio"  name="product-rate">
+                            <label class="rating-star" for="four-stars"></label>
+                            
+                            <input class="rating-input" id="three-stars" type="radio"  name="product-rate" checked>
+                            <label class="rating-star" for="three-stars"></label>
+                            
+                            <input class="rating-input" id="two-stars" type="radio"  name="product-rate">
+                            <label class="rating-star" for="two-stars"></label>
+
+                            <input class="rating-input" id="one-star" type="radio"  name="product-rate">
+                            <label class="rating-star" for="one-star"></label>
+                      </span>
+                        
+                      <span class="rating block">
+                      <span class="lbl-text">Rate the Support</span>
+                            
+                            <input class="rating-input" id="5stars" type="radio"  name="support-rate">
+                            <label class="rating-star" for="5stars"></label>
+                            
+                            <input class="rating-input" id="4stars" type="radio"  name="support-rate">
+                            <label class="rating-star" for="4stars"></label>
+                            
+                            <input class="rating-input" id="3stars" type="radio"  name="support-rate">
+                            <label class="rating-star" for="3stars"></label>
+                            
+                            <input class="rating-input" id="2stars" type="radio"  name="support-rate" checked>
+                            <label class="rating-star" for="2stars"></label>
+                            
+                            <input class="rating-input" id="1star" type="radio"  name="support-rate">
+                            <label class="rating-star" for="1star"></label>
+                        </span>
+                        
+                        <span class="rating block">
+                        <span class="lbl-text">Rate our Response</span>
+                            
+                            <input class="rating-input" id="5s" type="radio"  name="response-rate">
+                            <label class="rating-star" for="5s"></label>
+                            
+                            <input class="rating-input" id="4s" type="radio"  name="response-rate">
+                            <label class="rating-star" for="4s"></label>
+                            
+                            <input class="rating-input" id="3s" type="radio"  name="response-rate">
+                            <label class="rating-star" for="3s"></label>
+                            
+                            <input class="rating-input" id="2s" type="radio"  name="response-rate">
+                            <label class="rating-star" for="2s"></label>
+                            
+                            <input class="rating-input" id="1s" type="radio"  name="response-rate" checked>
+                            <label class="rating-star" for="1s"></label>
+                        </span>                         
+                                                       
+                    </div>
+                    <!-- /section -->
+                    
+                    <div class="spacer spacer-b25"></div> 
+                    
+                    <div class="spacer-b20">
+                      <label class="field-label">Which areas need further improvement?</label>
+                    </div>
+                    
+                    <div class="form-row">
+                      <div class="section form-col">
+                        <label class="option block spacer-b10">
+                          <input type="checkbox" name="response"><span class="checkbox"></span> Response Time                  
+                        </label>
+                            
+                        <label class="option block spacer-b10">
+                          <input type="checkbox" name="support"><span class="checkbox"></span> Customer Support               
+                        </label>
+                            
+                            <label class="option block">
+                                <input type="checkbox" name="updates"><span class="checkbox"></span> Product Updates                 
+                            </label>                                                        
+                                                    
+                        </div>
+                        <!-- /section -->
+
+                      <div class="section form-col">
+                        
+                        <label class="option block spacer-b10">
+                          <input type="checkbox" name="invoicing"><span class="checkbox"></span> Timely Invoicing                  
+                        </label>
+                            
+                        <label class="option block spacer-b10">
+                          <input type="checkbox" name="social"><span class="checkbox"></span> Social Features             
+                        </label>
+                            
+                        <label class="option block">
+                          <input type="checkbox" name="reports"><span class="checkbox"></span> Analytics                
+                        </label> 
+                                                    
+                      </div>
+                      <!-- /section -->
+                  </div>
+                  <!-- /form row -->
+                                                                                                                                      
+                </div>
+                <!-- /form body -->
+
+                <div class="form-footer">
+                  <button type="submit" class="button">Submit Feedback</button>
+                </div>
+                <!-- /form footer -->
+            </form>
+            
+        </div>
+        <!-- /form container -->
+    </div>
+    <!-- /container -->
+    
+  <div></div><!-- end section -->
+
+</body>
+</html>
