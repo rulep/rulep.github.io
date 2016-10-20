@@ -21,6 +21,13 @@ time,mark,audio,video{
 
 /* Table of Contents
 ------------------------------------
+Clearfix
+Primary Header
+Header: Left Side
+Navigation
+Links
+Dropdown Menu
+Structure
 Button Default
 Button Custom Styles
 Button Effects
@@ -158,6 +165,16 @@ Button Effects
 }
 .nav li:hover ul {
   display: block;
+}
+
+/*
+  ========================================
+  Structure
+  ========================================
+*/
+
+section {
+  margin-left: 3%;
 }
 
 /*
