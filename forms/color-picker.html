@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Color Building</title>
+		<link rel="stylesheet" href="color-picker.css">		
+	</head>
+
+	<body>
+
+    <!-- Header -->
+
+    <header class="primary-header group">
+
+      <div class="header-left">
+        <a href="https://learn.moderndeveloper.com/">
+          <img src="http://i.imgur.com/fw3JKQo.png" id="logo">
+        </a>
+        <p id="logo-text">rulep portfolio</p>
+      </div>
+
+      <nav class="nav primary-nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="/buttons/index.html">Buttons</a></li>
+          <li><a href="/profile/index.html">Profile</a></li>
+          <li><a href="#">Forms</a>
+            <ul>
+              <li><a href="#">Signup</a></li>
+              <li><a href="/forms/search.html">Search</a></li>
+              <li><a href="/forms/questionnaire.html">Questionnaire</a></li>
+              <li><a href="/forms/login.html">Login</a></li>
+              <li><a href="#">Color Building</a></li>
+              <li><a href="/forms/shipping.html">Shipping/Billing</a></li>
+              <li><a href="/forms/schedule.html">Scheduling</a></li>
+              <li><a href="/forms/credit.html">Credit/Debit</a></li>
+            </ul>
+          </li>
+          <li><a href="/calculator/index.html">Calculator</a></li>
+          <li><a href="/products/index.html">Products</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+
+  <!-- container -->
+    <div class="container">
+      <!-- form container -->
+      <div class="form-container">
+          <!-- form header -->
+          <div class="form-header">
+              <h4>Color Picker</h4>
+          </div>
+          <!-- /form header -->
+      
+      <form>  
+        <!-- form body -->
+        <div class="form-body">
+          <!-- form row -->
+          <div class="form-row">
+
+            <!-- color column 1 of 4 -->
+            <div class="color-col">
+              <div class="color-type">
+                <div class="color-name"><span>Red</span></div>
+                <input name="red" step="5" min="0" max="255" id="red" value="25" type="range">
+                <span class="output" id="redout">25</span>
+              </div>
+                        
+              <div class="section">
+                <div class="slider-wrapper">
+                  <div id="slider"></div>
+                </div>
+              </div>
+                        
+              <div class="section">
+                <label for="fullname" class="field-label"></label>
+                <label for="fullname" class="field">
+                  <input type="text" name="fullname" id="fullname" class="gui-input">
+                </label>
+              </div>
+
+              <div class="section">
+                <button type="submit" class="button">Copy</button>
+              </div>
+        
+            </div>
+            <!-- /color column 1 of 4 -->
+
+            <!-- color column 2 of 4 -->
+            <div class="color-col">
+              <div class="color-type">
+                <div class="color-name"><span>Green</span></div>
+                <input name="green" step="5" min="0" max="255" id="green" value="50" type="range">
+                <span class="output" id="greenout">50</span>
+              </div>
+                        
+              <div class="section">
+                <div class="slider-wrapper">
+                  <div id="slider"></div>
+                </div>
+              </div>
+                        
+              <div class="section">
+                <label for="fullname" class="field-label"></label>
+                <label for="fullname" class="field">
+                  <input type="text" name="fullname" id="fullname" class="gui-input">
+                </label>
+              </div>
+
+              <div class="section">
+                <button type="submit" class="button">Copy</button>
+              </div>
+        
+            </div>
+            <!-- /color column 2 of 4 -->
+
+            <!-- color column 3 of 4 -->
+            <div class="color-col">
+              <div class="color-type">
+                <div class="color-name"><span>Blue</span></div>
+                  <input name="blue" step="5" min="0" max="255" id="blue" value="75" type="range">
+                  <span class="output" id="blueout">75</span>
+              </div>
+                        
+              <div class="section">
+                <div class="slider-wrapper">
+                  <div id="slider"></div>
+                </div>
+              </div>
+                        
+              <div class="section">
+                <label for="fullname" class="field-label"></label>
+                <label for="fullname" class="field">
+                  <input type="text" name="fullname" id="fullname" class="gui-input">
+                </label>
+              </div>
+
+              <div class="section">
+                <button type="submit" class="button">Copy</button>
+              </div>
+        
+            </div>
+            <!-- /color column 3 of 4 -->
+
+            <!-- color column 4 of 4 -->
+            <div class="color-col">
+              <div class="color-type">
+                <div class="color-name"><span>Alpha</span></div>
+                  <input name="alpha" step="0.01" min="0" max="1" id="alpha" value="0.5" type="range">
+                  <span class="output" id="alphaout">0.5</span>
+              </div>
+                        
+              <div class="section">
+                <div class="slider-wrapper">
+                  <div id="slider"></div>
+                </div>
+              </div>
+                        
+              <div class="section">
+                <label for="fullname" class="field-label"></label>
+                <label for="fullname" class="field">
+                  <input type="text" name="fullname" id="fullname" class="gui-input">
+                </label>
+              </div>
+
+              <div class="section">
+                <button type="submit" class="button">Copy</button>
+              </div>
+        
+            </div>
+            <!-- /color column 4 of 4 -->
+                                                      
+          </div>
+          <!-- /form row -->
+        </div>
+        <!-- /form body -->
+        </form>
+            
+      </div>
+      <!-- /form container -->
+    </div>
+    <!-- /container -->
+    
+   <div></div>
+    <!-- end section -->
+
+	</body>
+</html>

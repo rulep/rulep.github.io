@@ -1,0 +1,354 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Table of Contents
+------------------------------------
+Structure
+Custom Styles
+Effects
+
+
+*/
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Primary Header
+  ========================================
+*/
+
+.primary-header {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0,0,0,0.4);
+  font-family: sans-serif;
+}
+
+
+/*
+  ========================================
+  Header: Left Side
+  ========================================
+*/
+
+.header-left {
+  float: left;
+}
+#logo, #logo-text {
+  line-height: 60px;
+  vertical-align: middle;
+}
+#logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 0px;
+  margin-left: 8px;
+}
+#logo-text {
+  color: #fff;
+  display: inline;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+  float: right;
+  position: relative;
+  text-align: right;
+  z-index: 5; 
+}
+.nav li {
+  display: inline-block;
+  float: left;
+  line-height: 60px;
+  margin: 0 10px;  
+  position: relative;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+#logo:hover {
+  opacity: 0.7;
+}
+.primary-header a {
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+}
+.primary-header a:hover {
+  color: #FE7DB9;
+}
+
+/*
+  ========================================
+  Dropdown Menu
+  ========================================
+*/
+
+.nav ul ul {
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+.nav ul ul li {
+  width: 120px;
+  line-height: 45px;
+  margin: 0;
+  text-align: left;
+}
+.nav ul ul li:hover {
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 5px;
+}
+.nav ul ul li a {
+  color: #bbb;
+}
+.nav ul ul li a:hover {
+  color: #FE7DB9;
+}
+.nav li:hover ul {
+  display: block;
+}
+
+
+/*
+  ========================================
+  Structure
+  ========================================
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 12% 0;
+  padding: 0 20px;
+}
+.form-container {
+  -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+     -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+          box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 50px auto;
+}
+.form-header {
+  border-radius: 5px 5px 0 0;
+  padding: 25px 30px;
+  position: relative;
+  overflow: hidden;
+}
+.form-body {
+  padding: 40px 30px;
+  padding-bottom: 20px; /* optional */
+}
+.form-row { /* check <div class> in HTML, necessary?? */
+  margin: 0 -10px;
+}
+.form-col, .color-col {
+  min-height: 1px; /* alt attribute */
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+.section {
+  margin-bottom: 22px;
+}
+.field-label {
+  display: block;
+  margin-bottom: 7px;
+}
+.field {
+  display: block;
+  position: relative;
+}
+.gui-input {
+  padding: 10px;
+}
+.button {
+  height: 42px;
+  background-color: purple;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 1;
+  padding: 0 18px;
+  text-align: center;
+  text-shadow: 0 1px rgba(255,255,255,0.2);
+  vertical-align: top;
+}
+
+/*
+  ========================================
+  Custom Styles
+  ========================================
+*/
+
+body {
+  background-color: #DD3C9C;
+}
+
+.form-container {
+  color: #34495E;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.23;
+}
+.form-header { /* .form-container */
+  background-color: #612773;
+  border-top: 4px solid #8A2D7E;
+  border-bottom: 5px solid #A91285;
+}
+h4 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+
+}
+
+/*
+  ========================================
+  Effects
+  ========================================
+*/
+
+.button:hover,
+.button:focus { 
+  background-color: #C63089; 
+}
+.button:active { 
+  background-color: #FB94D1; 
+}
+.button:hover, 
+.button:focus, 
+.button:active {
+  color: #fff; 
+  text-shadow: 0 1px rgba(0, 0, 0, 0.08);
+}
+
+/* ========== Custom CSS =========== */
+.form-container {
+  max-width: 852px;
+  height: 350px;
+}
+
+.color-col {
+  width: 25%;
+}
+
+.color-type {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.color-name {
+  height: 0;
+  border-top: 1px solid black;
+  text-align: center;
+}
+span {
+  background-color: #fff;
+  color: #777;
+  display: inline-block;
+  padding: 0 15px;
+  position: relative;
+  top: -10px;
+  text-transform: uppercase;
+}
+
+.slider-wrapper {
+  background-color: #E2E8F1;
+  border-radius: 3px;
+  position: relative;
+}
+
+.color-col input[type='range'] {
+    width: calc(100% - 62px);
+}
+
+
