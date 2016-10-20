@@ -1,0 +1,447 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Table of Contents
+------------------------------------
+Structure
+Custom Styles
+Effects
+
+
+*/
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Primary Header
+  ========================================
+*/
+
+.primary-header {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0,0,0,0.4);
+  font-family: sans-serif;
+}
+
+
+/*
+  ========================================
+  Header: Left Side
+  ========================================
+*/
+
+.header-left {
+  float: left;
+}
+#logo, #logo-text {
+  line-height: 60px;
+  vertical-align: middle;
+}
+#logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 0px;
+  margin-left: 8px;
+}
+#logo-text {
+  color: #fff;
+  display: inline;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+  float: right;
+  position: relative;
+  text-align: right;
+  z-index: 5; 
+}
+.nav li {
+  display: inline-block;
+  float: left;
+  line-height: 60px;
+  margin: 0 10px;  
+  position: relative;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+#logo:hover {
+  opacity: 0.7;
+}
+.primary-header a {
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+}
+.primary-header a:hover {
+  color: #FE7DB9;
+}
+
+/*
+  ========================================
+  Dropdown Menu
+  ========================================
+*/
+
+.nav ul ul {
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+.nav ul ul li {
+  width: 120px;
+  line-height: 45px;
+  margin: 0;
+  text-align: left;
+}
+.nav ul ul li:hover {
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 5px;
+}
+.nav ul ul li a {
+  color: #bbb;
+}
+.nav ul ul li a:hover {
+  color: #FE7DB9;
+}
+.nav li:hover ul {
+  display: block;
+}
+
+/*
+  ========================================
+  Structure
+  ========================================
+*/
+
+body {
+  background-color: #98CCE2;
+}
+
+.container {
+  margin: 12% 0;
+  padding: 0 20px;
+}
+.form-container {
+  max-width: 452px; /* another attribute property/value */
+  -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+     -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+          box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 50px auto;
+}
+.form-header {
+  border-radius: 5px 5px 0 0;
+  padding: 25px 30px;
+  position: relative;
+  overflow: hidden;
+}
+.form-body {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  xpadding-bottom: 20px; /* optional */
+}
+.form-row { /* check <div class> in HTML, necessary?? */
+  display: flex;
+  margin: 0 -10px;
+}
+.form-col {
+  flex: 1;
+  min-height: 1px; /* alt attribute */
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+.colm3 {
+  width: 25%;
+}
+.colm4 {
+  width: 33.33%;
+}
+.colm5 {
+  width: 41.66%;
+}
+.colm6 {
+  width: 50%;
+}
+.section {
+  margin-bottom: 22px;
+}
+.field-label {
+  display: block;
+  margin-bottom: 7px;
+}
+.field {
+  display: flex;
+  position: relative;
+}
+.gui-input {
+  padding: 10px;
+}
+select {
+  border: 0 !important;
+}
+.select,
+.select > select,
+.select-multiple select, 
+.gui-input, .gui-textarea {
+  width: 100%;
+  height: 42px;
+  background: #fff;
+  border: 2px solid #BDC3C7;
+  color: #34495E;
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  outline:none;
+  position: relative;
+  vertical-align: top;
+  *zoom: 1;
+}
+.field.select {
+  padding: 10px 0;
+}
+.button {
+  height: 42px;
+  background-color: #116388;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 1;
+  margin-right: 5px;
+  padding: 0 18px;
+  text-align: center;
+  text-shadow: 0 1px rgba(255,255,255,0.2);
+  vertical-align: top;
+}
+.option {
+  display: inline-block;
+  position: relative; 
+  padding-right:15px;    
+  vertical-align: middle;
+}
+.input-hint {
+  background-color: #F2F4FA;
+  border: 2px solid #bdc3c7;
+  border-top:1px solid #bdc3c7;
+  border-radius: 0 0 3px 3px;
+  color: #777;
+  display: block;
+  font-family: sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  margin-top: -4px;
+  padding: 10px;
+  position: relative; 
+}
+.spacer { 
+  height: 0; 
+  border-top: 1px solid #D9DDE5; 
+  display: block;
+}
+.spacer-b10 { 
+  margin-bottom: 10px; 
+}
+.spacer-b20 { 
+  margin-bottom: 20px; 
+}
+.spacer-b25 { 
+  margin-bottom: 25px; 
+}
+.spacer-b30 { 
+  margin-bottom: 30px; 
+}
+.spacer-t30 { 
+  margin-top: 30px; 
+}
+.spacer-t30 { 
+  margin-top: 40px; 
+}
+.rating { 
+  overflow: hidden; 
+}
+.rating.block { 
+  display: block; 
+  margin: 10px 0; 
+}
+.checkbox {
+  border-radius: 3px;
+  outline:none;
+}
+
+x.checkbox {
+  width: 21px;
+  height: 21px;
+  background-color: white;
+  border: 3px solid #B5C1C7;
+  display: inline-block;
+  position: relative;
+  top: 5px; 
+  margin-right: 2px; 
+}
+.tagline { 
+  border-top: 1px solid #D9DDE5;
+  height: 0;  
+  text-align: center;  
+}
+.schedule-txt {
+  background-color: #fff;
+  padding: 10px;
+  position: relative;
+  top: -10px;
+}
+.btn-social { 
+  margin-bottom: 5px;
+  position: relative;  
+}
+.span-left { 
+  padding-left: 52px; 
+  text-align: left; 
+}
+x.btn-social span {
+  width:42px; 
+  border-radius:3px 0 0 3px;  
+  display: inline-block; 
+  position: absolute;
+  left:0;
+  text-align: center;  
+}
+.form-footer {
+  overflow: hidden;
+  padding: 30px 110px;
+  background: #062C39 top left repeat-x;
+  border-radius: 0 0 5px 5px;
+}
+
+/*
+  ========================================
+  Custom Styles
+  ========================================
+*/
+
+.form-container {
+  color: #34495E;
+  background-color: #fff;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.23;
+}
+.form-header { /* .form-container */
+  background-color: #062B3A;
+  border-top: 4px solid #0A4058;
+  border-bottom: 5px solid #116388;
+}
+h4 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*
+  ========================================
+  Effects
+  ========================================
+*/
+
+.button:hover,
+.button:focus { 
+  background-color: #98CCE2; 
+}
+.button:active { 
+  background-color: #fff; 
+  color: #98CCE2;
+}
+ 
+.button:focus, 
+.button:active { 
+  text-shadow: 0 1px rgba(0, 0, 0, 0.08);
+}
