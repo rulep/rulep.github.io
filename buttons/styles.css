@@ -130,7 +130,7 @@ Button Effects
   text-decoration: none !important;
 }
 .primary-header a:hover {
-  color: #FE7DB9;
+  color: #FE7DB9 !important;
 }
 
 /*
